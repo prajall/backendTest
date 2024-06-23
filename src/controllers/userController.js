@@ -7,6 +7,8 @@ export const register = async (req, res) => {
     return res.status(400).send("Phone number and pin is required");
   }
 
+  //we can add hashing of pin using bcrypt
+
   const createdUser = await User.create({
     phoneNumber,
     pin,
