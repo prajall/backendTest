@@ -8,4 +8,3 @@ export default app;
 app.use(express.json());
 
 app.use("/user", userRoute);
-/// i want to delte this
